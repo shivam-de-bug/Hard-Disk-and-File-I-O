@@ -1,0 +1,48 @@
+# Performance Analysis of `fread` and `mmap` in File Processing
+
+## Overview
+This is to compare the performance of `fread` and `mmap` for reading large datasets to calculate weather statistics (min, max, mean) for different weather stations. The dataset consists of temperature records across various locations, stored in a text file.
+
+## Objectives
+1. **Performance Comparison**: Analyze the efficiency of `fread` and `mmap` in terms of time taken and system call overhead.
+2. **Identify Bottlenecks**: Using `strace` to identify and quantify system call bottlenecks in both approaches.
+
+## How `fread` and `mmap` Work
+
+### `fread`
+- **How It Works**:
+  - Multiple read system calls are called.
+  - Uses buffered I/O to read chunks of data from the file into a user-space buffer.
+  - Buffered I/O incurs additional overhead when handling large files.
+  - Repeatedly invokes the `read` system call for each chunk.
+- **Performance Characteristics**:
+  - There is high context switching which leads to high overhead.
+  - Frequent kernel-to-user space transitions increase overhead.
+  - Suitable for line-by-line processing but can become inefficient for large files.
+
+### `mmap`
+- **How It Works**:
+  - Handling large files is easier using mmap as number of system calls are much lower.
+  - Maps the file directly into the process's virtual memory space.
+  - The kernel loads file pages into memory when a user asks them to.
+- **Performance Characteristics**:
+  - Avoids repeated system calls using memory-mapped I/O.
+  - Much more efficient for large files and low overhead, especially with sequential access(using madvise).
+
+### Observations from `strace`
+## `fread`
+- **There were 37662 system calls made during the exection
+- **System Calls**: Frequent `read` system calls, one for each buffer fill operation.
+- **Bottleneck**: High overhead due to frequent kernel-to-user transitions for large datasets.
+
+## `mmap`
+- There were only 38 mmap system calls and 4 unmap calls made during the execution
+-
+
+Trace log is present in the file
+System Calls used are:
+  To count the number of system calls:
+    strace is used while executing
+    grep -c 'read' fread_trace.log
+    grep -c 'mmap' mmap_trace.log
+

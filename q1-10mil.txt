@@ -1,0 +1,75 @@
+Florence-Graham;44.4
+Villa Allende;-51.2
+Mühlacker;47.1
+East Stroudsburg;38.5
+Taufkirchen;49.2
+Bhui;36.3
+Yangmei;14.3
+Kiskunhalas;35.9
+Capim Branco;-21.4
+Brent;29.2
+Pā’īn Chāf;32.3
+Sukumo;33.6
+August;21.0
+Moa;16.6
+Rongcheng;34.4
+Shira;33.4
+Waupun;66.2
+Al Mukallā;20.1
+San Agustín Acasaguastlán;8.1
+Klintsy;45.4
+Nuevo Casas Grandes;0.4
+Guadalupe;5.9
+Turbaco;8.0
+Ratnagiri;31.4
+Tiachiv;50.2
+Ürgüp;29.2
+Ongjang;32.2
+Armação dos Búzios;-25.2
+Karaağaç;40.8
+Aizenay;51.4
+Mutuípe;-10.4
+Araputanga;-13.8
+Almendralejo;35.1
+Lingcheng;16.7
+Andernach;29.5
+Al Qūşīyah;25.8
+Gurgunta;19.1
+Münsingen;48.9
+Logroño;39.7
+Majhgawān;18.6
+Kalispell;58.1
+San Bernardo;-41.8
+Lilongwe;-15.5
+Seysses;34.4
+Ba Đồn;16.5
+Rapu-Rapu;16.5
+Lanquín;3.3
+Arcueil;24.6
+Fīnch’a’ā;2.6
+Leighton Buzzard;58.5
+Pompei;34.5
+Aldridge;46.2
+Hīrākud;11.1
+Mersch;50.2
+Chavkandak;52.7
+Yueqing;24.6
+Le Chambon-Feugerolles;46.3
+Tandarāmpattu;27.5
+Xonqa;43.4
+Atimonan;24.7
+Erith;62.0
+Guntūr;21.2
+Otley;59.8
+Tsimafana;-36.7
+Karabük;41.3
+San Marco in Lamis;46.6
+San Fernando;10.1
+Pudu;15.3
+Raymond Terrace;-28.5
+Standerton;-36.6
+Al Aḩad al Masāriḩah;13.0
+Puerto Vallarta;9.4
+Santa Cruz;-15.2
+Zimapan;24.9
+Aiyomojok;13.5
